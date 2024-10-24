@@ -46,6 +46,10 @@ abstract class Miembro {
         $this->email = $email;
     }
 
+    public function toString() {
+        return "Nombre: " . $this->nombre . " " . $this->apellidos . ", Email: " . $this->email;
+    }
+
 }
 
 ?>
