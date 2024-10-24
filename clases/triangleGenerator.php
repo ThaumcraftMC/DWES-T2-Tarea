@@ -2,7 +2,7 @@
 
 class TriangleGenerator {
 
-    public function generateTriangle($altura) {
+    public static function generateTriangle($altura) {
         for ($i = 0; $i < $altura; $i++) {
             $frase = "";
             for ($j = $altura - ($i + 1); $j > 0; $j--) {

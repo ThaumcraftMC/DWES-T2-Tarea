@@ -1,19 +1,17 @@
 <?php
 
-class Miembro {
+abstract class Miembro {
 
     private $id;
     private $nombre;
     private $apellidos;
     private $email;
-    private $edad;
 
-    public function __construct($id, $nombre, $apellidos, $email, $edad) {
+    public function __construct($id, $nombre, $apellidos, $email) {
         $this->id = $id;
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
         $this->email = $email;
-        $this->edad = $edad;
     }
 
     public function getId() {
@@ -46,14 +44,6 @@ class Miembro {
 
     public function setEmail($email) {
         $this->email = $email;
-    }
-
-    public function getEdad() {
-        return $this->edad;
-    }
-
-    public function setEdad($edad) {
-        $this->edad = $edad;
     }
 
 }
