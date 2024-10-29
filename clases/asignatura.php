@@ -12,6 +12,10 @@ class Asignatura {
         $this->creditos = $creditos;
     }
 
+    public function getId() {
+        return $this->id;
+    }
+
     public function toString() {
         return "Nombre: " . $this->nombre . ", Créditos: " . $this->creditos;
     }

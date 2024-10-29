@@ -21,13 +21,17 @@ class Alumno extends Miembro {
         $this->edad = $edad;
     }
 
+    public function getAsignaturas() {
+        return $this->asignaturas;
+    }
+
     public function abonarCurso() {
         $this->cursoAbonado = true;
     }
 
-    public function matricularseEnAsignatura($asignatura) {
+    public function matricularEnAsignatura($asignatura) {
         foreach ($this->asignaturas as $element) {
-            if ($element->id == $asignatura->id) {
+            if ($element->getId() == $asignatura->getId()) {
                 return;
             }
         }
